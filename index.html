@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Leave Management</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Employee Leave Management</h2>
+    <form id="leaveForm">
+      <label for="employeeID">Employee ID:</label>
+      <input type="text" id="employeeID" required>
+      
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required>
+      
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" required>
+      
+      <label for="department">Department:</label>
+      <input type="text" id="department" required>
+      
+      <label for="startDate">Starting Date of Leave:</label>
+      <input type="date" id="startDate" required>
+      
+      <label for="endDate">Ending Date of Leave:</label>
+      <input type="date" id="endDate" required>
+      
+      <button type="submit" class="btn">Add Leave</button>
+    </form>
+
+    <table id="leaveTable">
+      <thead>
+        <tr>
+          <th>Employee ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Department</th>
+          <th>Starting Date</th>
+          <th>Ending Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Leave data will be populated here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
